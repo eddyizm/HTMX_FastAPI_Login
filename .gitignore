@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# data
+*.csv
+*.sqlite
+*.sqlite-journal
+*.db
+*.xlsx
+
 # Distribution / packaging
 .Python
 build/

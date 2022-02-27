@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block content %}
+<!-- REGISTRATION FORM -->
+<div id="register" class="container">
+    <div class="row">
+        <div class="row col s4">
+            <h3>Sign up!</h3>
+        </div>
+        <form
+            class="col s12"
+            hx-post="/register"
+            hx-target="#register"  
+            method="post"
+        >
+            <div class="row">
+                <div class="input-field col s12">
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        class="validate"
+                    />
+                    <label for="email">Email</label>
+                    <span
+                        class="helper-text"
+                        data-error="Please enter a valid email."
+                        data-success=""
+                    ></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        class="validate"
+                    />
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row col s4">
+                <button
+                    class="btn waves-effect waves-light indigo darken-2"
+                    type="submit"
+                    name="action"
+                >
+                    Register
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+        <div class="row col s4">
+            <p>
+                Already have an Account? <a href="/" class="">Login here.</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- END REGISTRATION FORM -->
+{% endblock %}
