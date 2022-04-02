@@ -84,9 +84,9 @@ async def register(request: Request, email: str = Form(...), password: str = For
 
 @app.post("/login/")
 async def sign_in(request: Request, response: Response,
-    username: str = Form(...), password: str = Form(...)):
+    email: str = Form(...), password: str = Form(...)):
     try:
-        user = User(email = username,
+        user = User(email = email,
             password= password)  
         if await auth_handler.authenticate_user(user.email, user.password):
             atoken = auth_handler.create_access_token(user.email)
