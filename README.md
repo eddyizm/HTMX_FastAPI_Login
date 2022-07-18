@@ -37,6 +37,7 @@ launch server
 ```
 uvicorn main:app --reload
 ```
+and open in [browser](http://localhost:8000/)    
 
 We will need jinja templates to render pages  
 
