@@ -21,36 +21,15 @@ Upgrade pip because for some reason this is still a thing.
 python -m pip install --upgrade pip
 ```
 
-Then install the FastAPI and required libraries.(note you can skip this step and just install the requirements.txt file)
+Then install the FastAPI and required libraries.  
+*note you can just install the requirements.txt*
 
 ```
-pip install fastapi email-validator pydantic
+pip install -r requirements.txt
 ```
-and the uvicorn server
-
-```  
-pip install "uvicorn[standard]"
-
-``` 
 
 launch server
 ```
 uvicorn main:app --reload
 ```
 and open in [browser](http://localhost:8000/)    
-
-We will need jinja templates to render pages  
-
-```  
-pip install jinja2 python-multipart
-```
-
-Next we add databases and sqlalchemy 
-```
-pip install sqlalchemy databases aiosqlite
-```
-
-Security and cryptography libraries
-```
-pip install python-jose passlib cryptography bcrypt
-```
