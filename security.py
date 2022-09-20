@@ -4,8 +4,8 @@ from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from typing import Any, Union
 from jose import jwt
-from schema import users, database
 
+from schema import users, database
 from models import User
 
 

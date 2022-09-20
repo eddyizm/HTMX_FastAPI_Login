@@ -19,3 +19,5 @@ bcrypt==3.2.0
 passlib==1.7.4
 cryptography==36.0.1
 python-multipart==0.0.5
+aiofiles==22.1.0
+Jinja2==3.0.3
