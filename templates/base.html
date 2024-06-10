@@ -2,18 +2,17 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
         <!--Import Google Icon Font-->
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
         />
-        <!-- Compiled and minified CSS -->
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+            href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+            integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+            crossorigin="anonymous"
         />
-
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
@@ -23,11 +22,10 @@
         />
     </head>
     <body>
-        <main>{% block content %} {% endblock %}</main>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!-- Load from unpkg -->
+        <main class="wrapper">{% block content %} {% endblock %}</main>
         <script src="https://unpkg.com/htmx.org@1.7.0"></script>
-        <footer class="container"> <a href="/">home</a> | <a href="/private">private</a></footer>
+        <footer class="container">
+            <a href="/">home</a> | <a href="/private">private</a>
+        </footer>
     </body>
 </html>
