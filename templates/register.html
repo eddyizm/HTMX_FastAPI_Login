@@ -6,13 +6,13 @@
             <h3>Sign up!</h3>
         </div>
         <form
-            class="col s12"
+            class="pure-form pure-form-stacked"
             hx-post="/register"
             hx-target="#register"  
             method="post"
         >
             <div class="row">
-                <div class="input-field col s12">
+                <div class="pure-input-2-3">
                     <input
                         id="email"
                         type="email"
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s12">
+                <div class="pure-input-2-3">
                     <input
                         id="password"
                         name="password"
@@ -38,9 +38,9 @@
                     <label for="password">Password</label>
                 </div>
             </div>
-            <div class="row col s4">
+            <div class="pure-input-2-3">
                 <button
-                    class="btn waves-effect waves-light indigo darken-2"
+                    class="pure-button pure-button-primary"
                     type="submit"
                     name="action"
                 >
