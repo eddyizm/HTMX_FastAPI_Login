@@ -1,4 +1,4 @@
-/* label focus and underline color for email type input
+/* label focus and underline color for email type input */
 .input-field input[type="email"]:focus + label {
     color: #303f9f !important;
 }
@@ -6,41 +6,14 @@
 .row .input-field input[type="email"]:focus {
     border-bottom: 1px solid #303f9f !important;
     box-shadow: 0 1px 0 0 #303f9f !important;
-} */
+}
 
 /* label focus and underline color for password type input */
-/* .input-field input[type="password"]:focus + label {
+.input-field input[type="password"]:focus + label {
     color: #303f9f !important;
 }
 
 .row .input-field input[type="password"]:focus {
     border-bottom: 1px solid #303f9f !important;
     box-shadow: 0 1px 0 0 #303f9f !important;
-} */
-
-body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Display content in a column */
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    h1{
-        margin-bottom: 1rem;
-    }
-}
-
-.material-icons {
-    font-weight: 200;
-    display: inline-block;
-}
-
-.pure-button-primary {
-    display: inline-block;
-    vertical-align: middle;
 }

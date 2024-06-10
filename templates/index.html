@@ -1,18 +1,17 @@
 {% extends "base.html" %} {% block content %}
 <!-- LOGIN FORM -->
 <div id="login" class="container">
-    <div class="wrapper">
     <div class="row">
         <div class="row col s4">
             <h3>Login</h3>
         </div>
-        <form  class="pure-form pure-form-stacked" 
+        <form class="col s12" 
                hx-post="/login/"
                hx-swap="innerHTML"
                hx-target="#login"                    
                method="post">
             <div class="row">
-                <div class="pure-input-2-3">
+                <div class="input-field col s12">
                     <input id="email" type="email"  name= "email"  class="validate" required/>
                     <label for="email">Email</label>
                     <span
@@ -23,13 +22,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="pure-input-2-3">
+                <div class="input-field  col s12">
                     <input id="password" name="password" type="password" class="validate" required/>
                     <label for="password">Password</label>
                 </div>
             </div>
-            <div class="pure-input-2-3">
-                <button  class="pure-button pure-button-primary" type="submit" name="action">Submit
+            <div class="row col s4">
+                <button class="btn waves-effect indigo darken-2 waves-light " type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                   </button>
             </div>
@@ -38,7 +37,6 @@
             <p>Don't have an account? <a href="/register/" class="">Register here.</a></p>
         </div>
     </div>
-</div>
 </div>
 <!-- END LOGIN FORM -->
 {% endblock %}
